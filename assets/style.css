@@ -1,3 +1,8 @@
 li {
   padding: 15%;
 }
+
+.card {
+  height: 35vh;
+  overflow: hidden;
+}

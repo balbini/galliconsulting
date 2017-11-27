@@ -5,4 +5,5 @@ li {
 .card {
   height: 35vh;
   overflow: hidden;
+  position: relative;
 }

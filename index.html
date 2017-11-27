@@ -13,8 +13,11 @@
 
     <!-- Compiled and minified JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+
+    <script type="text/javascript"
+    src="./assets/app.js"></script>
 
   </head>
   <body>
@@ -22,11 +25,19 @@
     <nav>
       <div class="nav-wrapper blue lighten-2">
         <a href="#" class="brand-logo">Galli Consulting</a>
+        <a data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#">Services</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Client Login</a></li>
+            <li><a href="#modal1" class="modal-trigger">Client Signup</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#modal1" class="modal-trigger">Client Signup</a></li>
             <li><a href="#">Resources</a></li>
           </ul>
       </div>
@@ -37,48 +48,44 @@
       <hr>
       <div id="testimonials">
         <h4>Client Testimonials</h4>
-        <div class="row">
-          <div class="col s12 m4 l4">
-            <div class="card">
-              <div class="card-content">
-                <span class="card-title activator">Loyalty<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title">Loyalty<i class="material-icons right">close</i></span>
+                <h5>Loyalty</h5>
                 <p>I got to know Karen while I was on the board at Woodlands Market, and Karen's loyalty and length of employment with Woodlands Market speaks volumes. Her ability to multi-task and handle financial decisions is exceptional. Her business acumen and knowledge of accounting, along with her being trustworthy and loyal, are very hard to find in today's marketplace. As an independent grocer, most business consultants I encounter don't understand how many hats you have to wear but Karen knows it all too well, which for me is very important. Her professional experience in the many facets of business combined with the above skill set would make her a tremendous assest to any organization.
                   <br>
                   ~Andy Bachich, Owner at Andy's Local Market
               </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <span class="card-title activator">Loyalty<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title">Knowledge<i class="material-icons right">close</i></span>
+          <div class="divider"></div>
+              <h5>Knowledge</h5>
               <p>Karen Galli was essential in helping me return the Marin Association of Realtors to a sound business, professional, and financial footing. As the CEO of the organization, I was impressed by how quickly she understood the important management, financial and operational aspects of the association and her expertise in providing sound and valuable advice on critical issues. Her ability to explain and answer questions about budget, accounting, and financial related information helped inspire confidence among the staff and members of the Board of Directors. I highly recommend Karen to anyone who is seeking top-notch management, accounting and financial expertise from a highly-qualified individual who is easy to work with, builds trust, and is at the top of her game.
                 <br>
                 ~Edward Segal, former CEO of the Marin Association of Realtors
             </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title activator">Loyalty<i class="material-icons right">more_vert</i></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">Leadership<i class="material-icons right">close</i></span>
+        <div class="divider"></div>
+            <h5>Leadership</h5>
             <p>Karen is an exceptional leader who serves as a true strategic partner to her clients, with the skills, dedication and insight to throughly understand the operations of any firm she advises. She provides essential financial oversight, and her ability to establish the systems needed to carry any organization through challenge and growth is remarkable. She is passionate about accuracy and punctuality for compliance with state and federal regulations and deadlines. She constantly seeks to exceed client expectations and provide exceptional results. I highly recommend her.
               <br>
               ~Ron Goldman, Partner at The Goldman Law Firm
           </p>
-        </div>
-      </div>
           </div>
         </div>
       </div>
-      <div id="about">
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close">Submit</a>
+        </div>
+      </div>
+      <div class="container" id="about">
       <h4>About Us</h4>
       <hr>
         <p>With a proven track record in effective risk assessment, in developing and implementing financial plans, in business systems, and in financial and administrative infrastructure, Karen focuses on building a collaborative environment: balancing the obejctives and relationships  of sales/customer relations, operations and finance, leading to improved overall profitability and performance.</p>
@@ -87,7 +94,11 @@
         <p>Karen received her B.S. in Business Administration, Accounting Concentration, cum laude from San Francisco State University. She is in the process of completing her CMA and is a member of the Institute of Management Accountants.</p>
       </div>
   </div>
-
+  <footer class="page-footer blue lighten-2">
+    <div class="container">
+      <h4 class="footer-content right-align">Galli Consulting</h4>
+    </div>
+  </footer>
   </body>
 
 </html>

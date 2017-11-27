@@ -2,8 +2,13 @@ li {
   padding: 15%;
 }
 
-.card {
-  height: 35vh;
-  overflow: hidden;
-  position: relative;
+#sidenav-overlay {
+  z-index: 996;
+}
+
+footer {
+  width:100vw;
+}
+.footer-content {
+  margin: 0 auto;
 }
